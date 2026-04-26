@@ -7,22 +7,26 @@
   <style>
     body {
       margin: 0;
-      padding: 24px;
+      padding: 0;
       font-family: Arial, sans-serif;
       background: #fff7fb;
       color: #222;
     }
-    header{
-      background:white;
-      padding:16px 24px;
-      font-weight:bold;
-      font-size:18px;
-      border-bottom:1px solid #eee;
 
+    /* ===== 页头 ===== */
+    header {
+      background: white;
+      padding: 16px 24px;
+      font-weight: bold;
+      font-size: 18px;
+      border-bottom: 1px solid #eee;
+    }
+
+    /* ===== 主体 ===== */
     .container {
       max-width: 480px;
       margin: 0 auto;
-      padding:24px;
+      padding: 24px;
     }
 
     h1 {
@@ -47,32 +51,18 @@
     }
 
     .pair img {
-      width: calc(50% - 5px);
+      width: 50%;
       height: auto;
     }
 
     .single {
-      width: 100%;
       margin-top: 24px;
       text-align: center;
-      clear: both;
     }
 
     .single img {
-      display: block;
-      margin: 0 auto;
+      width: 100%;
       height: auto;
-      object-fit: contain;
-    }
-
-    .catdog img {
-      width: 100%;
-      max-width: 100%;
-    }
-
-    .penguin img {
-      width: 100%;
-      max-width: 100%;
     }
 
     .bottom {
@@ -99,18 +89,35 @@
       font-weight: bold;
       font-size: 16px;
     }
+
+    /* ===== 页脚 ===== */
+    footer {
+      margin-top: 40px;
+      padding: 16px;
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+      border-top: 1px solid #eee;
+    }
   </style>
 </head>
 
 <body>
+
+  <!-- 页头 -->
+  <header>
+    My friend
+  </header>
+
+  <!-- 内容 -->
   <div class="container">
 
     <h1>Me & friend:</h1>
 
     <p>
-      “When you guys have already finished fried chicken, fries, doner kebab,
-      downed 2 Monsters, had a plate of pasta, and even smashed half a pizza —
-      and then your friend leans over like, ‘Should we order dessert too?’”
+      “When you guys have already finished fried chicken, fries, mozzarella sticks,
+      downed two Monsters, had a plate of pasta, and even smashed half a pizza —
+      and then your friend leans over like, ‘Should we get dessert too?’”
     </p>
 
     <div class="pair">
@@ -118,21 +125,28 @@
       <img src="friends/photo.jpg">
     </div>
 
-    <div class="single catdog">
+    <div class="single">
       <img src="friends/catdog.jpg">
     </div>
 
-      <div class="bottom">
+    <div class="bottom">
       <h2>Twinbro ➡️</h2>
-            <a href="https://www.instagram.com/sge_233?igsh=NjM5MXBtbmx6aWlm&utm_source=qr" target="_blank">
+
+      <a href="https://www.instagram.com/sge_233?igsh=NjM5MXBtbmx6aWlm&utm_source=qr" target="_blank">
         📷 Nico
       </a>
     </div>
 
-    <div class="single penguin">
+    <div class="single">
       <img src="friends/penguin.jpg">
     </div>
 
   </div>
+
+  <!-- 页脚 -->
+  <footer>
+    © 2025 ShuJiao Yuan
+  </footer>
+
 </body>
 </html>
