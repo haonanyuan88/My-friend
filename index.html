@@ -33,15 +33,18 @@
       margin-bottom: 12px;
     }
 
+    /* ⭐ 核心：手机两列排版 */
     .photos {
       display: flex;
+      flex-wrap: wrap;   /* 允许换行 */
       gap: 10px;
       margin-top: 20px;
     }
 
     .photos img {
-      width: 50%;
+      width: 48%;        /* 一行两个 */
       height: auto;
+      border-radius: 10px;
     }
 
     .bottom {
