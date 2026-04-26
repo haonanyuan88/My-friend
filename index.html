@@ -40,26 +40,32 @@
     }
 
     .pair img {
-      width: 50%;
+      width: calc(50% - 5px);
       height: auto;
     }
 
     .single {
-      margin-top: 18px;
+      width: 100%;
+      margin-top: 24px;
       text-align: center;
+      clear: both;
     }
 
     .single img {
-      max-width: 100%;
+      display: block;
+      margin: 0 auto;
       height: auto;
+      object-fit: contain;
     }
 
     .catdog img {
       width: 100%;
+      max-width: 100%;
     }
 
     .penguin img {
       width: 100%;
+      max-width: 100%;
     }
 
     .bottom {
@@ -105,20 +111,20 @@
       <img src="friends/photo.jpg">
     </div>
 
-    <div class="bottom">
-      <h2>Twinbro ➡️</h2>
-
-      <a href="https://www.instagram.com/nico93nicolas" target="_blank">
-        📷 Nico
-      </a>
-    </div>
-
     <div class="single catdog">
       <img src="friends/catdog.jpg">
     </div>
 
     <div class="single penguin">
       <img src="friends/penguin.jpg">
+    </div>
+
+    <div class="bottom">
+      <h2>Twinbro ➡️</h2>
+
+      <a href="https://www.instagram.com/nico93nicolas" target="_blank">
+        📷 Nico
+      </a>
     </div>
 
   </div>
