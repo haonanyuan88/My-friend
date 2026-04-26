@@ -20,7 +20,7 @@
 
     h1 {
       color: blue;
-      font-size: 36px; 
+      font-size: 36px;
       line-height: 1.2;
       margin-bottom: 16px;
     }
@@ -33,18 +33,33 @@
       margin-bottom: 12px;
     }
 
-    /* ⭐ 核心：手机两列排版 */
-    .photos {
+    .pair {
       display: flex;
-      flex-wrap: wrap;   /* 允许换行 */
       gap: 10px;
       margin-top: 20px;
     }
 
-    .photos img {
-      width: 48%;        /* 一行两个 */
+    .pair img {
+      width: 50%;
       height: auto;
-      border-radius: 10px;
+    }
+
+    .single {
+      margin-top: 18px;
+      text-align: center;
+    }
+
+    .single img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .catdog img {
+      width: 100%;
+    }
+
+    .penguin img {
+      width: 100%;
     }
 
     .bottom {
@@ -85,11 +100,9 @@
       and then your friend leans over like, ‘Should we get dessert too?’”
     </p>
 
-    <div class="photos">
+    <div class="pair">
       <img src="friends/door.jpg">
       <img src="friends/photo.jpg">
-      <img src="friends/catdog.jpg">
-      <img src="friends/penguin.jpg">
     </div>
 
     <div class="bottom">
@@ -98,6 +111,14 @@
       <a href="https://www.instagram.com/nico93nicolas" target="_blank">
         📷 Nico
       </a>
+    </div>
+
+    <div class="single catdog">
+      <img src="friends/catdog.jpg">
+    </div>
+
+    <div class="single penguin">
+      <img src="friends/penguin.jpg">
     </div>
 
   </div>
